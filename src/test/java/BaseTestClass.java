@@ -24,16 +24,4 @@ public class BaseTestClass {
         driver.quit();
     }
 
-    public static HomePageFactory loginValidUser() {
-        String userName = "liliana.ghiorghita.testing@gmail.com";
-        String password = "Qwerty.2017QW";
-        HomePageFactory homePageFactory
-                = new HomePageFactory(driver);
-        homePageFactory.navigateToLoginPage();
-        LoginPageFactory loginPageFactory
-                = PageFactory.initElements(driver, LoginPageFactory.class);
-        homePageFactory = loginPageFactory.authenticate(userName, password);
-
-        return homePageFactory;
-    }
 }
