@@ -32,6 +32,8 @@ public class ProductPageFactory {
     }
 
     public void popupProductPage() {
+        WebDriverWait wait=new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.elementToBeClickable(productImageButton));
         productImageButton.click();
 
     }

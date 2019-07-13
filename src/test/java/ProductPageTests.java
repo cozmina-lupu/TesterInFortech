@@ -12,17 +12,16 @@ public class ProductPageTests extends BaseTestClass {
                 = new ProductPageFactory(driver);
         productPageFactory.popupProductPage();
         Assert.assertTrue(productPageFactory.popupProductTitle.isDisplayed());
-        Assert.assertEquals(productPageFactory.popupProductTitle, "Apple Juice (1000ml)");
+        Assert.assertEquals(productPageFactory.popupProductTitle.getText(), "Apple Juice (1000ml)");
         Assert.assertTrue(productPageFactory.popupProductDescription.isDisplayed());
-        Assert.assertEquals(productPageFactory.popupProductDescription, "The all-time classic.");
+        Assert.assertEquals(productPageFactory.popupProductDescription.getText(), "The all-time classic.");
         Assert.assertTrue(productPageFactory.popupProductPrice.isDisplayed());
         Assert.assertTrue(productPageFactory.popupProductImage.isDisplayed());
     }
 
     @Test
     public void popupProductPageNotLogged() {
-        String url = "https://juice-shop.herokuapp.com/#/login";
-
+        String url = "https://juice-shop.herokuapp.com/#/";
         driver.get(url);
 
         HomePageFactory homePageFactory
@@ -33,9 +32,9 @@ public class ProductPageTests extends BaseTestClass {
                 = new ProductPageFactory(driver);
         productPageFactory.popupProductPage();
         Assert.assertTrue(productPageFactory.popupProductTitle.isDisplayed());
-        Assert.assertEquals(productPageFactory.popupProductTitle, "Apple Juice (1000ml)");
+        Assert.assertEquals(productPageFactory.popupProductTitle.getText(), "Apple Juice (1000ml)");
         Assert.assertTrue(productPageFactory.popupProductDescription.isDisplayed());
-        Assert.assertEquals(productPageFactory.popupProductDescription, "The all-time classic.");
+        Assert.assertEquals(productPageFactory.popupProductDescription.getText(), "The all-time classic.");
         Assert.assertTrue(productPageFactory.popupProductPrice.isDisplayed());
         Assert.assertTrue(productPageFactory.popupProductImage.isDisplayed());
     }
