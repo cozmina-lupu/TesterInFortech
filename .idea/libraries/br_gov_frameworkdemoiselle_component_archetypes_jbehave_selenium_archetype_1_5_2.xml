@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="br.gov.frameworkdemoiselle.component.archetypes:jbehave-selenium-archetype:1.5.2" type="repository">
+    <properties maven-id="br.gov.frameworkdemoiselle.component.archetypes:jbehave-selenium-archetype:LATEST">
+      <exclude>
+        <dependency maven-id="org.mockito:mockito-all" />
+        <dependency maven-id="mockit:jmockit" />
+      </exclude>
+    </properties>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jbehave-selenium-archetype-1.6.0-BETA2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jbehave-selenium-archetype-1.6.0-BETA2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
